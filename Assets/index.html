@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+        window.onload = function () {
+            document.querySelector(".icon").addEventListener("click", function() {
+                if(document.querySelector(".myLinks").style.display == "block") {
+                    document.querySelector(".myLinks").style.display = "none"
+                } else if (document.querySelector(".myLinks").style.display = "none") {
+                    document.querySelector(".myLinks").style.display = 'block'
+                }  
+            })
+        }
+    </script>
+    <title>Codewell layout clone</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header_menu">
+            <div class="menu_logo_svg">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM10.75 17.292L6.25 12.928L8.107 11.07L10.75 13.576L16.393 7.792L18.25 9.649L10.75 17.292Z" fill="black"/>
+               </svg>    
+            </div>
+            <div class="menu_center">
+                <div class="myLinks">
+                    <nav>
+                        <ul>
+                            <li><a href="">Business</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Features</a></li>
+                            <li><a class="button_login_header" href="">Login</a></li>
+                            <li><a class="button_get_started" href="#">Get started</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+                <a href="javascript:void(0);" class="icon">
+                    <i class="fa fa-bars"></i>
+                </a>
+        </div>
+    </div>
+
+    <section class="banner">
+        <div class="principal_box">
+            <div class="box_left">
+                <div class="title_text">
+                    <h1>Share your unfiltered thoughts. Get paid.</h1>
+                    <p>Donec sed mollis augue, quis ullamcorper ante. Pellentesque scelerisque magna quam, quis convallis dolor sagittis quis.</p>
+                </div>
+                <div class="column_options">
+                    <div class="column">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM10.75 17.292L6.25 12.928L8.107 11.07L10.75 13.576L16.393 7.792L18.25 9.649L10.75 17.292Z" fill="black"/>
+                        </svg> 
+                        <p>Receive 99% of the earnings.</p>   
+                    </div>
+                    <div class="column">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM10.75 17.292L6.25 12.928L8.107 11.07L10.75 13.576L16.393 7.792L18.25 9.649L10.75 17.292Z" fill="black"/>
+                        </svg> 
+                        <p>NGet paid via debit card, ACH or Paypal.</p>  
+                    </div>
+                    <div class="column">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM10.75 17.292L6.25 12.928L8.107 11.07L10.75 13.576L16.393 7.792L18.25 9.649L10.75 17.292Z" fill="black"/>
+                        </svg> 
+                        <p>Withdraw your earning anytime.</p>  
+                    </div>
+                </div>
+                <div class="row_get_started">
+                    <input type="text" name="e-mail" placeholder="Digite seu email">
+                    <a class="button_get_started_banner" href="#">Get started</a>
+                </div>
+            </div>
+                <div class="box_image_right">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="./images/Hero_Image_(Desktop).png"/>
+                        <source media="(min-width: 768px)" srcset="./images/Hero_Image_(Tablet).png"/>
+                        <source media="(min-width: 320px)" srcset="./images/Hero_Image_(Mobile).png"/>
+                        <img style="width: 100%; max-height: 600px " src="./images/Hero_Image_(Desktop).png">
+                    </picture>
+                    
+                </div>
+        </div>
+    </section>
+
+
+    <section class="column_items">
+            <div class="column_area">
+                <div class="item">
+                    <img src="./images/Dribbble Logo.png" style="width: 80%; height: 45px"/>
+                </div>
+                <div class="item">
+                    <img src="./images/Facebook Logo.png" style="width: 80%; height: 45px"/>
+                </div>
+                <div class="item">
+                    <img src="./images/Google Logo.png" style="width: 80%; height: 45px"/>
+                </div>
+                <div class="item">
+                    <img src="./images/Pinterest Logo.png" style="width: 80%; height: 45px"/>
+                </div>
+                <div class="item">
+                    <img src="./images/Reddit Logo.png" style="width: 80%; height: 45px"/>
+                </div>
+                <div class="item">
+                    <img src="./images/Slack Logo.png" style="width: 80%; height: 45px"/>
+                </div>
+                <div class="item">
+                    <img src="./images/Twitter Logo.png" style="width: 80%; height: 45px"/>
+                </div>
+                <div class="item">
+                    <img src="./images/Youtube Logo.png" style="width: 80%; height: 45px"/>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="banner_2">
+                <div class="principal_box">
+                    <div class="box_left_area">
+                        <div class="box_left">
+                            <h1>Secute your money with escrow</h1>
+                            <p>Donec sed mollis augue, quis ullamcorper ante. Pellentesque scelerisque magna quam, quis convallis dolor sagittis quis.</p>
+                            <a href="">Learn more about Escorw</a>
+                        </div>
+                    </div>
+                    <div class="box_image_right">
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="./images/Phone_Mockup_(Desktop).png"/>
+                            <source media="(min-width: 768px)" srcset="./images/Phone_Mockup_(Tablet).png"/>
+                            <source media="(min-width: 320px)" srcset="./images/Phone_Mockup_(Mobile).png"/>
+                            <img style="max-width: 100%; max-height: 400px;" src="./images/Phone_Mockup_(Desktop).png">
+                        </picture>
+                    </div>
+                </div>
+                </div>
+    </section>
+
+    <section class="banner_3">
+        <div class="principal_box">
+            <div class="image_left">
+                <img style="width: 100%; max-height: 500px;" src="./images/Text Editor.png"/>
+            </div>
+            <div class="box_right">
+                <div class="title_text">
+                    <h1>A text editor like no other</h1>
+                    <p>Donec sed mollis augue, quis ullamcorper ante. Pellentesque scelerisque magna quam, quis convallis dolor sagittis quis.</p>
+                    <a href="">Learn more about Escorw</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<img src="./images/Phone Mockup (Mobile).png"
